@@ -1,0 +1,88 @@
+.box1 {
+    background-image: url('../../images/pexels-chan-walrus-958545.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 10;
+}
+
+.box2 {
+    margin-top: 30px;
+}
+
+.box3 {
+    border: 1px outset grey;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.box3:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.box4 {
+    outline: none;
+    width: 50%;
+    height: 50px;
+    border-radius: 7px;
+    padding-left: 20px;
+}
+
+.box7{
+    margin-left: 45px;
+}
+
+.box8{
+    color: black;
+    text-decoration-line: none;
+}
+
+.box9{
+    margin-left: 50px;
+}
+
+.box10{
+    border: 1px solid grey;
+}
+
+@media only screen and (max-width: 992px) {
+    .box5 {
+        display: none;
+    }
+
+    .box6{
+        text-align: center;
+    }
+    .box7{
+        margin-left: 0px;
+    }
+    .box9{
+        margin-left: 0px;
+    }
+}
