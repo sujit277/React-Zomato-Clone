@@ -28,8 +28,8 @@ const Collection = ({ list }) => {
           </div>
         </div>
         <Slider {...settings}>
-          {list.map((item) => (
-            <div>
+          {list.map((item, i) => (
+            <div key={i}>
               <div className="collection-cover">
                 <img
                   src={item.cover}

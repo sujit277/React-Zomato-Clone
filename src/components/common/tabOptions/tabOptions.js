@@ -37,6 +37,7 @@ const TabOptions = ({ activeTab, setActiveTab }) => {
       <div className="options-wrapper max-width">
         {tabs.map((tab) => (
           <div
+            key={tab.id}
             className={`tab-item absolute-center cur-po ${
               activeTab === tab.name && "active-tab"
             }`}

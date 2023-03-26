@@ -1,5 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
+import { Link } from "react-router-dom";
 import Img1 from "../../images/Screenshot (610).png";
 import Img2 from "../../images/Screenshot (611).png";
 import Img3 from "../../images/Screenshot (613).png";
@@ -17,25 +18,25 @@ const LandingPage = () => {
           >
             <ul>
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal2"
                 >
                   Signup
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
                   Login
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/restaurent">Add Restaurent</a>
+                <Link to="/">Add Restaurent</Link>
               </li>
             </ul>
             <img
@@ -55,26 +56,26 @@ const LandingPage = () => {
         </div>
 
         <div
-          class="modal fade"
+          className="modal fade"
           id="exampleModal"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3 class="modal-title" id="exampleModalLabel">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h3 className="modal-title" id="exampleModalLabel">
                   Log in
                 </h3>
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body mb-5">
+              <div className="modal-body mb-5">
                 <div className="col-10 mx-auto">
                   <input
                     className="mb-4"
@@ -111,19 +112,19 @@ const LandingPage = () => {
                     }}
                   >
                     <span style={{ padding: "0px 10px" }}>
-                      <i class="fa-brands fa-google"></i>
+                      <i className="fa-brands fa-google"></i>
                     </span>
                     Continue with Google
                   </button>
-                  <a
+                  <Link
                     style={{ textDecorationLine: "none" }}
-                    href="/"
+                    to="/"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal2"
                   >
                     New to Zomato?{" "}
                     <span style={{ color: "#EF4F5F" }}>Create Account</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -131,26 +132,26 @@ const LandingPage = () => {
         </div>
 
         <div
-          class="modal fade"
+          className="modal fade"
           id="exampleModal2"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3 class="modal-title" id="exampleModalLabel">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h3 className="modal-title" id="exampleModalLabel">
                   Sign up
                 </h3>
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body mb-5">
+              <div className="modal-body mb-5">
                 <div className="col-10 mx-auto">
                   <input
                     className="mb-4"
@@ -192,19 +193,19 @@ const LandingPage = () => {
                     }}
                   >
                     <span style={{ padding: "0px 10px" }}>
-                      <i class="fa-brands fa-google"></i>
+                      <i className="fa-brands fa-google"></i>
                     </span>
                     Continue with Google
                   </button>
-                  <a
+                  <Link
                     style={{ textDecorationLine: "none" }}
-                    href="/"
+                    to="/"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
                     Already have an account?{" "}
                     <span style={{ color: "#EF4F5F" }}>Login</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -213,17 +214,17 @@ const LandingPage = () => {
 
         <div className="row mt-5 mb-5">
           <div className="col-sm-6">
-            <a href="/order" className="box8">
-              <div class="card box9">
-                <img src={Img5} class="card-img-top" alt="Please reload Page" />
-                <div class="card-body">
+            <Link to="/order" className="box8">
+              <div className="card box9">
+                <img src={Img5} className="card-img-top" alt="Please reload Page" />
+                <div className="card-body">
                   <h2>Order Online</h2>
-                  <p class="card-text">
+                  <p className="card-text">
                     Stay at home and order to your Doorstep
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -277,25 +278,25 @@ const LandingPage = () => {
             </div>
             <div className="col">
               <div style={{ display: "flex" }}>
-                <div class="form-check" style={{ marginRight: "20px" }}>
+                <div className="form-check" style={{ marginRight: "20px" }}>
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="flexRadioDefault"
                     id="flexRadioDefault1"
                   />
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <label className="form-check-label" htmlFor="flexRadioDefault1">
                     Email
                   </label>
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="flexRadioDefault"
                     id="flexRadioDefault2"
                   />
-                  <label class="form-check-label" for="flexRadioDefault2">
+                  <label className="form-check-label" htmlFor="flexRadioDefault2">
                     Phone
                   </label>
                 </div>
@@ -303,7 +304,7 @@ const LandingPage = () => {
               <div>
                 <input
                   type="email"
-                  class="form-control mt-4"
+                  className="form-control mt-4"
                   placeholder="Email"
                   width="50px"
                 ></input>
